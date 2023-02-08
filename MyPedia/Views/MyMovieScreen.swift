@@ -11,6 +11,7 @@ class MyMovieScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         
         let success = UILabel()
         textSetting(name: success, title: "로그인 성공", x: 90, y: 100, width: 300, height: 300, fontSize: 50, weight: .bold, color: .black)

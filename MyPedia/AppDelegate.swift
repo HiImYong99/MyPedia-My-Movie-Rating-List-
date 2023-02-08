@@ -7,15 +7,22 @@
 
 import UIKit
 import CoreData
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
+      func application(_ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions:
+                       [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
-    }
+      }
 
     // MARK: UISceneSession Lifecycle
 

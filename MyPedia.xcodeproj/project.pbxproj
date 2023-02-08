@@ -16,9 +16,13 @@
 		EE0E21AE2993CE8800BB2157 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E21AD2993CE8800BB2157 /* RegisterScreen.swift */; };
 		EE0E21B02993CEA200BB2157 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E21AF2993CEA200BB2157 /* LoginScreen.swift */; };
 		EE0E21B22993DA7F00BB2157 /* MyMovieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E21B12993DA7F00BB2157 /* MyMovieScreen.swift */; };
+		EE0E21B42993ED7500BB2157 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0E21B32993ED7500BB2157 /* GoogleService-Info.plist */; };
+		F38AFC7316E178EF7E3BF5F4 /* Pods_MyPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBE3969BEA4D0E127EF422B /* Pods_MyPedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F2A6A70369510F7788B1458 /* Pods-MyPedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPedia.release.xcconfig"; path = "Target Support Files/Pods-MyPedia/Pods-MyPedia.release.xcconfig"; sourceTree = "<group>"; };
+		DBBE3969BEA4D0E127EF422B /* Pods_MyPedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0E21902993C00600BB2157 /* MyPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0E21932993C00600BB2157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0E21952993C00600BB2157 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		EE0E21AD2993CE8800BB2157 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		EE0E21AF2993CEA200BB2157 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EE0E21B12993DA7F00BB2157 /* MyMovieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieScreen.swift; sourceTree = "<group>"; };
+		EE0E21B32993ED7500BB2157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE4876A02993EF02005D88B9 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4876A42993EF06005D88B9 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6CA44CBCA5E719415BABC0B /* Pods-MyPedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPedia.debug.xcconfig"; path = "Target Support Files/Pods-MyPedia/Pods-MyPedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38AFC7316E178EF7E3BF5F4 /* Pods_MyPedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AE13613C95ECC886253C45B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA44CBCA5E719415BABC0B /* Pods-MyPedia.debug.xcconfig */,
+				6F2A6A70369510F7788B1458 /* Pods-MyPedia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E55028FC1F316BCA7FC664D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE4876A42993EF06005D88B9 /* FirebaseCore.framework */,
+				EE4876A02993EF02005D88B9 /* FirebaseAuth.framework */,
+				DBBE3969BEA4D0E127EF422B /* Pods_MyPedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE0E21872993C00600BB2157 = {
 			isa = PBXGroup;
 			children = (
 				EE0E21922993C00600BB2157 /* MyPedia */,
 				EE0E21912993C00600BB2157 /* Products */,
+				7AE13613C95ECC886253C45B /* Pods */,
+				7E55028FC1F316BCA7FC664D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +99,7 @@
 				EE0E21AC2993C86100BB2157 /* Controller */,
 				EE0E21A12993C00800BB2157 /* LaunchScreen.storyboard */,
 				EE0E21A42993C00800BB2157 /* Info.plist */,
+				EE0E21B32993ED7500BB2157 /* GoogleService-Info.plist */,
 				EE0E219C2993C00700BB2157 /* MyPedia.xcdatamodeld */,
 			);
 			path = MyPedia;
@@ -107,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE0E21A72993C00800BB2157 /* Build configuration list for PBXNativeTarget "MyPedia" */;
 			buildPhases = (
+				B4317CF644ECEA9ADF83137B /* [CP] Check Pods Manifest.lock */,
 				EE0E218C2993C00600BB2157 /* Sources */,
 				EE0E218D2993C00600BB2157 /* Frameworks */,
 				EE0E218E2993C00600BB2157 /* Resources */,
+				FB7DBEC9C699E47AB6BF83DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,11 +192,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0E21A32993C00800BB2157 /* LaunchScreen.storyboard in Resources */,
+				EE0E21B42993ED7500BB2157 /* GoogleService-Info.plist in Resources */,
 				EE0E21A02993C00800BB2157 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4317CF644ECEA9ADF83137B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7DBEC9C699E47AB6BF83DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPedia/Pods-MyPedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPedia/Pods-MyPedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPedia/Pods-MyPedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE0E218C2993C00600BB2157 /* Sources */ = {
@@ -310,6 +386,7 @@
 		};
 		EE0E21A82993C00800BB2157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6CA44CBCA5E719415BABC0B /* Pods-MyPedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +413,7 @@
 		};
 		EE0E21A92993C00800BB2157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2A6A70369510F7788B1458 /* Pods-MyPedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

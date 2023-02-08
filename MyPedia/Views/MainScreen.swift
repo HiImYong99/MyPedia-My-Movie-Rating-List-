@@ -12,7 +12,7 @@ class MainScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+
         let mainTitle = UILabel()
         mainTitle.text = "마이피디아"
         mainTitle.frame = CGRect(x: 89, y: 150, width: 300, height: 100)
@@ -27,24 +27,32 @@ class MainScreen: UIViewController {
         
         let registerBtn = UIButton(type: .system)
         registerBtn.setTitle("회원가입", for: .normal)
-        registerBtn.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .light)
+        registerBtn.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         registerBtn.tintColor = .red
         registerBtn.backgroundColor = .green
         registerBtn.layer.cornerRadius = 25
         registerBtn.frame = CGRect(x: 93, y: 450, width: 200, height: 50)
+        registerBtn.addTarget(self, action: #selector(mainToRegister), for: .touchUpInside)
         view.addSubview(registerBtn)
         
         let loginBtn = UIButton(type: .system)
         loginBtn.setTitle("로그인", for: .normal)
-        loginBtn.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .light)
+        loginBtn.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         loginBtn.tintColor = .red
         loginBtn.backgroundColor = .yellow
         loginBtn.layer.cornerRadius = 25
         loginBtn.frame = CGRect(x: 93, y: 520, width: 200, height: 50)
+        loginBtn.addTarget(self, action: #selector(mainToLogin), for: .touchUpInside)
         view.addSubview(loginBtn)
     }
 
-
+    @objc func mainToRegister() {
+        navigationController?.pushViewController(RegisterScreen(), animated: true)
+    }
+    
+    @objc func mainToLogin() {
+        navigationController?.pushViewController(LoginScreen(), animated: true)
+    }
 }
 
 
