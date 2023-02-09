@@ -46,6 +46,10 @@ class LoginScreen: UIViewController {
         LoginBtn.frame = CGRect(x: 120, y: 500, width: 150, height: 70)
         LoginBtn.addTarget(self, action: #selector(loginToMovie), for: .touchUpInside)
         view.addSubview(LoginBtn)
+        
+        
+        inputID.text = "1@2.com"
+        inputPW.text = "123456"
     }
     
 
