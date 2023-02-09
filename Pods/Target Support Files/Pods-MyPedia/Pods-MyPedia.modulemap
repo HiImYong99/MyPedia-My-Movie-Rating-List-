@@ -1,0 +1,6 @@
+framework module Pods_MyPedia {
+  umbrella header "Pods-MyPedia-umbrella.h"
+
+  export *
+  module * { export * }
+}
